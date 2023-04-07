@@ -1,4 +1,16 @@
-# Scaffold-Eth 2
+# A platform to rent your ERC4907 NFTs on the Polygon Zkevm testnet.
+
+# Features 
+
+Lower fees: The Polygon ZK-EVM testnet uses zero-knowledge proofs (ZKPs) to significantly reduce transaction fees compared to the Matic network. This makes it more affordable to deploy and use rentable NFTs on the testnet.
+
+Faster transaction times: The Polygon ZK-EVM testnet also boasts faster transaction times compared to the Matic network, as a result of the ZKP technology used to validate transactions.
+
+More secure: The use of ZKPs on the Polygon ZK-EVM testnet provides an additional layer of security, making it less susceptible to attacks and vulnerabilities.
+
+Improved scalability: The ZK-EVM architecture allows for more efficient use of network resources, which means the testnet can handle a greater volume of transactions and smart contracts than the Matic network.
+
+## Built with Scaffold-Eth 2
 
 ⚠️ This project is currently under active development. Things might break. Feel free to check the open issues & create new ones.
 

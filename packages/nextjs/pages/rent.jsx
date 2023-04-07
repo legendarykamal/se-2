@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
-import cardBackground from "../components/rent/cardbg.png";
-import cardImage from "../components/rent/cardimg.png";
-// import cardAvatar from "../public/assets/card-avatar.png";
+import Image from "next/image";
 import styles from '../styles/rent.module.css';
 
 export default function Rent() {
@@ -54,8 +52,8 @@ export default function Rent() {
         shineY={shineY}
       >
         <CardImageOutline gradientAngle={gradientAngle} />
-        <CardImage src={cardImage} alt="Card Image" />
-        <CardTitle>Build beautiful apps with GPT4 and Midjourney</CardTitle>
+          <Image src="/assets/cardimg.png" alt="gradient" width ="300" height="100" />
+        <CardTitle>One place to Rent your NFT's</CardTitle>
         <Divider gradientAngle={gradientAngle} />
         <CardSubtitle>40 sections - 5 hours</CardSubtitle>
         <CardText>
@@ -76,7 +74,7 @@ const AppContainer = styled.div`
   align-items: center;
   height: 100vh;
   background-color: #2d2d2d;
-  background-image: url(${cardBackground});
+  background-image: url('/assets/cardbg.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -144,6 +142,7 @@ const CardImageOutline = styled.div`
     inset: 0;
     border-radius: 10px;
     padding: 1px;
+    right: 2px;
     background: linear-gradient(
       ${(props) => props.gradientAngle}deg,
       rgba(255, 255, 255, 0.1) 0%,
