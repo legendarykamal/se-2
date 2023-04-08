@@ -1,4 +1,6 @@
-# A platform to rent your ERC4907 NFTs on the Polygon Zkevm testnet.
+# Rentable Warriors 
+
+A platform to rent your ERC4907 NFTs on the Polygon Zkevm testnet.
 
 # Features 
 
