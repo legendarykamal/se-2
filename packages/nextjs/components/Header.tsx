@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { Bars3Icon, BugAntIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const router = useRouter();
@@ -46,9 +47,15 @@ export const Header = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink href="/example-ui">
+        <NavLink href="/rent">
           <SparklesIcon className="h-4 w-4" />
-          Example UI
+          Rent NFTs
+        </NavLink>
+      </li>
+      <li>
+        <NavLink href="/nft">
+          <SparklesIcon className="h-4 w-4" />
+          NFT
         </NavLink>
       </li>
     </>
@@ -90,7 +97,8 @@ export const Header = () => {
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">{navLinks}</ul>
       </div>
       <div className="navbar-end flex-grow mr-4">
-        <RainbowKitCustomConnectButton />
+        {/* <RainbowKitCustomConnectButton /> */}
+        <ConnectWallet />
         <FaucetButton />
       </div>
     </div>
